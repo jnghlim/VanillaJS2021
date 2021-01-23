@@ -1,0 +1,66 @@
+body{
+    background-color: #F2D6AC ;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form,
+.greetings{
+    display:none;
+}
+
+.showing{
+    display:block;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1
+    }
+}
+
+.bgImg{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index: -1;
+    animation: fadeIn 1s linear;
+}
+
+li{
+    font-weight: bolder;
+    font-size:15px;
+    color:white;
+}
+
+.js-title{
+    color:white;
+    font-weight: bolder;
+}
+
+.js-weather{
+    position:absolute;
+    font-size:12px;
+    color:bisque;
+    font-weight:bolder;
+    bottom:0;
+    margin-bottom:15px;
+}
+
+.greetings{
+    margin-top:100px;
+    font-size:50px;
+    font-weight: bolder;
+    color:rgb(184, 116, 53);
+}
+
+.js-toDoForm{
+    margin-top:20px;
+}
